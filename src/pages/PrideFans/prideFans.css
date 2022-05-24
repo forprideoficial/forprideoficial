@@ -1,0 +1,65 @@
+.PrideFans {
+    background-image: url("../../assets/images/sensual.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 120px 0;
+}
+.PrideFans .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0;
+}
+.PrideFans .logo img{
+    width: 200px;
+}
+
+.PrideFans .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0;
+    color: var(--Primary);
+    font-weight: 700;
+}
+.PrideFans .text h1 {
+    font-size:40px;
+}
+.PrideFans .text h2 {
+    color: var(--White);
+}
+.PrideFans .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    color: var(--Primary);
+}
+
+.PrideFans .buttons a {
+    padding:10px 100px;
+    border-radius: 6px;
+    color: var(--White);
+    background-color: var(--Primary);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a {
+    color: var(--White);
+    font-size: 16px;
+    text-decoration: none;
+}

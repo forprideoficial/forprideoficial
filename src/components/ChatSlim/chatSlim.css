@@ -1,0 +1,124 @@
+.content-chat {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--Background2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow:auto;
+    z-index: 99;
+}
+
+.content-chat::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .content-chat::-webkit-scrollbar-track {
+    background: var(--Background2);        /* color of the tracking area */
+  }
+  
+  .content-chat::-webkit-scrollbar-thumb {
+    background-color: var(--Background-man);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--Background2);  /* creates padding around scroll thumb */
+  }
+
+.content-chat .chat-avatar {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 5px 0;
+    border-radius: 50%;
+    margin: 6px 0;
+    object-fit: cover;
+}
+
+
+
+.content-chat .chat-avatar img {
+  border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    z-index: 0;
+}
+.content-chat .chat-avatar img:before {
+  content: " '"  attr("") "'";
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  z-index: 0;
+}
+.content-chat .chat-avatar img:after {
+  content: " '"  attr("") "'";
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.content-chat .chat-avatar svg {
+  z-index: 1;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 30%;
+  color: rgb(110, 218, 2);
+  font-size: 10px;
+  border: 1px solid var(--Background2);
+  border-radius: 50%;
+  background-color: var(--Background2);
+}
+
+.content-chat .chat-avatar button {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .content-chat {
+    display: none;
+  }}
+
+
+/* @media (max-width: 900px) {
+  .content-chat {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: row;    
+    background-color: var(--Background);
+    position: fixed;
+    margin-top: 80vh;
+    bottom: 0;
+    z-index: 1;
+    overflow-x: scroll;
+}
+
+.content-chat-hidden {
+  display: none;
+}
+
+.content-chat .chat-avatar button {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+  border-radius: 6px;
+    background-color: var(--Primary);
+    width: 35px;
+    height: 50px;
+    color: var(--White);
+    border: none;
+} 
+}*/
+

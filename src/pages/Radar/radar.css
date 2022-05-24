@@ -1,0 +1,286 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--Black);
+}
+
+.content .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Black)
+}
+
+.content .aside{
+    margin-left: 10%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .aside .radar {
+    width: 100%;
+    border-right: 2px solid var(--Background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.content .aside .radar .radar-selected {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.content .aside .radar .radar-selected button {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid var(--Gray_font1);
+    color: var(--Gray_font1);
+    background-color: var(--Black);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content .aside .radar .radar-selected .selected{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid var(--Primary);
+    color: var(--Primary);
+    background-color: var(--Black);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content .aside .radar .radar-range {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.content .aside .radar .radar-range input[type=range] {
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    color: var(--Primary);
+    background-color: var(--Primary);
+
+}
+
+.content .aside .radar .radar-range h4 {
+    color: var(--Primary);
+    font-weight: 600;
+}
+
+.content .aside .radar .radar-search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--Primary);
+    padding: 10px;
+    color: var(--White);
+    margin: 10px;
+}
+
+.content .aside .radar .radar-all {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    flex-wrap: wrap;
+}
+
+.content .aside .radar .radar-all .radar-unic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+
+}
+
+.content .aside .radar .radar-all .radar-unic .img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.content .aside .radar .radar-all .radar-unic .img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border-radius: 50%;
+    filter: blur(5px);
+}
+
+.content .aside .radar .radar-all .radar-unic .cover {
+    width: 260px;
+}
+
+.content .aside .radar .radar-all .radar-unic .profile {
+    width: 80px;
+}
+
+.content .aside .radar .radar-all .radar-unic .members {
+    width: 120px;
+}
+
+.content .aside .radar .radar-all .radar-unic button {
+    border: 1px solid var(--Primary);
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--Primary);
+    font-weight: 600;
+    background-color: var(--Black);
+    margin: 5px 0;
+}
+
+.content .aside .radar .radar-all .radar-unic img {
+    border-radius: 10px;
+}
+
+.content .aside .radar .radar-all .radar-unic a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid var(--Primary);
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--Primary);
+    font-weight: 600;
+    background-color: var(--Black);
+    margin: 5px 0;
+}
+
+
+.content .aside .radar .radar-all .radar-unic h5 {
+    font-weight: 700;
+    color: var(--Primary);
+    margin: 5px 0 5px 0;
+    font-size: 12px;
+}
+.content .aside .radar .radar-all .radar-unic h6 {
+    font-weight: 500;
+    color: var(--Gray_font1);
+    margin: 5px 0 5px 0;
+}
+
+
+.distance {
+    color: var(--Gray_font1)
+}
+
+@media(max-width: 850px) {
+    .content .aside .radar .radar-all {
+        width: 100%;    
+}
+
+.content .aside .radar .radar-all .radar-unic {
+    width: 150px;
+    text-align: center;
+
+}
+
+.content .aside .radar .radar-all .radar-unic .img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.content .aside .radar .radar-all .radar-unic .img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.content .aside .radar .radar-all .radar-unic button {
+    border: 1px solid var(--Primary);
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 14px;
+    color: var(--Primary);
+    font-weight: 600;
+    background-color: var(--Black);
+    margin: 5px 0;
+}
+
+@media(max-width: 650px) {
+    .content .aside .radar .radar-all {
+        width: 100%;    
+}
+
+.content .aside .radar .radar-all .radar-unic {
+    width: 150px;
+    text-align: center;
+
+}
+
+.content .aside .radar .radar-all .radar-unic .img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.content .aside .radar .radar-all .radar-unic .img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.content .aside .radar .radar-all .radar-unic button {
+    border: 1px solid var(--Primary);
+    padding: 5px;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 14px;
+    color: var(--Primary);
+    font-weight: 600;
+    background-color: var(--Black);
+    margin: 5px 0;
+}
+
+}
+}
