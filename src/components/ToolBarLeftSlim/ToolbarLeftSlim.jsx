@@ -33,12 +33,6 @@ function ToolbarLeftSlimComponent() {
                     </button>
                     </a>
           
-                    {/* <a href="/messages" >
-                    <button className="toolIcon" >
-                        <FiMail size={20}/>
-                       Recados
-                    </button>
-                    </a> */}
 
                     <a href="/notifications" >
                     <button className="toolIcon" >
@@ -67,13 +61,13 @@ function ToolbarLeftSlimComponent() {
                     </button>
                     </a>
 
-                    <a href="/ranking" >
+                    <a href="/signature" >
                     <button className="toolIcon2" >
                        Assinatura Pride +
                     </button>
                     </a>
 
-                    <a href="/pridefans" >
+                    <a href="https://www.pridefans.com.br" >
                     <button className="toolIcon3" >
                       <img src={logofans} alt="" />    
                     </button>

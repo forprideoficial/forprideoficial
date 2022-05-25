@@ -87,6 +87,7 @@
 
 .content-Login .bloco2 .signIn .form input {
     width: 70%;
+    height: 30px;
     border: none;
     display: flex;
     flex-direction: column;
@@ -113,6 +114,7 @@ margin-top: 10px;
 
 .content-Login .bloco2 .signIn .form .inputPassword input {
     width: 100%;
+    height: 30px;
     border: none;
     display: flex;
     flex-direction: column;
@@ -130,7 +132,7 @@ margin-top: 10px;
 .content-Login .bloco2 .signIn .form .password {
     background-color:rgb(15, 15, 15);
     width: 50px;
-    height: 27px;
+    height: 30px;
     border: none;
     border: none;
     border-bottom: 1px solid #fff;

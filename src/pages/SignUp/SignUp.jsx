@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import logoImg from '../../assets/images/logo.png'
 import { AuthContext } from '../../contexts/Auth';
 import { FiEye, FiEyeOff} from 'react-icons/fi';
-import { IoLogoWhatsapp} from 'react-icons/io5';
+import { IoLogoGoogle, IoLogoFacebook, IoLogoTwitter} from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 import image1 from '../../assets/images/slider/7.jpg';
 
@@ -55,6 +55,7 @@ function SignUp() {
           <input type="text" placeholder="Nome completo" value={login} onChange={(e) => setLogin(e.target.value)}/>
           <input type="text" placeholder="Nome de usuário" value={login} onChange={(e) => setLogin(e.target.value)}/>
           <input type="text" placeholder="E-mail" value={login} onChange={(e) => setLogin(e.target.value)}/>
+          <input type="text" placeholder="Telefone" value={login} onChange={(e) => setLogin(e.target.value)}/>
           <div className="inputPassword">
           <input type={passwordView === false ? "password" : "text" } placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)}/>
           <button className='password' onClick={handlePasswordView}>{passwordView === false ? <FiEye /> : <FiEyeOff /> } </button>
@@ -65,6 +66,9 @@ function SignUp() {
           </div>
           <div className="buttons">
           <button onClick={handleCreateAccount}> Criar conta </button>
+          <br />
+          <button className="facebook"> <IoLogoFacebook /><b>Facebook</b></button>
+          <button className="google"> <IoLogoGoogle /><b>Google</b></button>
           </div>
           <div className="create">
           <p>Já possui conta? <a href="/"> Entre agora</a></p>

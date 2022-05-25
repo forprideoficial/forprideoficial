@@ -50,15 +50,6 @@ function TopBar() {
                 <Notifications /> 
 
             
-                {/* <a href="/invitelist">
-                <div className="link" data-tip data-for='Enviados'>
-                    <IoMailOpenOutline />
-                </div>
-                </ a> */}
-                <ReactTooltip id='Enviados' place="bottom" type="dark" effect="solid">
-                     <span>Convites Enviados</span>
-                </ReactTooltip>
-
 
                 <MyMessages />
 

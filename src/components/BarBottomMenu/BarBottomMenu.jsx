@@ -24,18 +24,9 @@ const {data} = useFetch(`/online`);
     return (
         <div className="BarBottom">
             <div className="BarBottomBlock">
-                { select === false ?
                 <div className="Buttons">
 
-                 <button className="ButtonsUnic" onClick={handleOpenUsersOnline}>
-                        <IoChatbubblesOutline size={20}/>Online
-                    </button>
-                <a href="/invite" >
-                 <button className="ButtonsUnicSelect" >
-                        <IoMailOutline size={20}/>Convite
-                    </button>
-                    </a>
-                <a href="/feed" >
+                  <a href="/feed" >
                  <button className="ButtonsUnic" >
                         <IoNewspaperOutline size={20}/>Feed
                     </button>
@@ -47,14 +38,8 @@ const {data} = useFetch(`/online`);
                     </button>
                     </a>
           
-                    {/* <a href="/messages" >
-                    <button className="ButtonsUnic" >
-                        <FiMail size={20}/>
-                       Recados
-                    </button>
-                    </a> */}
 
-                    <a href="/invitelist" >
+                    <a href="/messages" >
                     <button className="ButtonsUnic" >
                         <IoMailOpenOutline size={20}/>
                        Enviado
@@ -65,13 +50,6 @@ const {data} = useFetch(`/online`);
                     <button className="ButtonsUnic" >
                         <IoRadio size={20}/>
                        Radar
-                    </button>
-                    </a>
-
-                    <a href="/ranking" >
-                    <button className="ButtonsUnic" >
-                        <IoStatsChartOutline size={20}/>
-                       Ranking
                     </button>
                     </a>
 
@@ -89,64 +67,15 @@ const {data} = useFetch(`/online`);
                     </button>
                     </a>
 
-                    <a href="/foruns" >
-                    <button className="ButtonsUnic" >
-                        <IoList size={20}/>
-                       Fóruns
-                    </button>
-                    </a>
 
-
-
-                    {/* <a href="/locals" >
-                    <button className="ButtonsUnic" >
-                        <IoBusinessOutline size={20}/>Locais
-                    </button>
-                    </a> */}
                     <a href="/settings" >
                     <button className="ButtonsUnic" >
                         <IoSettingsOutline size={20}/>Configs
                     </button>
                     </a>
-                    {/* <a href="/plains" >
-                    <button className="ButtonsUnic" >
-                        <IoCashOutline size={20}/>Planos
-                    </button>
-                    </a> */}
-                    <a href="/infos" >
-                    <button className="ButtonsUnic" >
-                        <IoInformationCircleOutline size={20}/>Infos
-                    </button>
-                    </a>
+
+
                 </div>
-                : select === true ?
-                <div className="Buttons">
-
-                <button className="ButtonsUnic" onClick={handleOpenBar}>
-                       <IoMenuOutline size={20}/>Menu
-                   </button>
-
-                   {data?.map((user) => {
-                       return(             
-                    user.idAccount === userData.id ? "" :
-               <a href={`/profile-friend/${user.idAccount}`} key={user.idAccount}>
-                <div className="divUser" key={user.idAccount}>
-                    <IoChatbubblesOutline />
-                    <div className="image">
-                     <img src={user.avatar} alt={user.idAccount} />
-                    </div>
-                   </div>
-                   </a>
-                       )
-                   })}
-
-                 
-               </div>
-                :
-                    ""
-                }
-
-
             </div>
         </div>
     )
